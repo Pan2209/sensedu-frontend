@@ -1,0 +1,15 @@
+.graphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}

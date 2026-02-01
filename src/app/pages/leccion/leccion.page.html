@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lección</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding center">
+
+  <h1 *ngIf="currentLetter">{{ currentLetter }}</h1>
+  <h2 *ngIf="!currentLetter">¡Lección terminada!</h2>
+
+  <ion-button color="success" expand="block" (click)="markAnswer(true)" [disabled]="!currentLetter">
+    Bien
+  </ion-button>
+
+  <ion-button color="danger" expand="block" (click)="markAnswer(false)" [disabled]="!currentLetter">
+    Mal
+  </ion-button>
+
+</ion-content>

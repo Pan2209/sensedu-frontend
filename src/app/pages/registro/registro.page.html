@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="graphs">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Top 5 Correctos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas id="correctChart"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Top 5 Incorrectos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas id="incorrectChart"></canvas>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let s of stats">
+      <ion-label>
+        Letra: {{ s.letter }} |
+        Correctos: {{ s.correct }} |
+        Incorrectos: {{ s.incorrect }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
