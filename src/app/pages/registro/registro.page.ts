@@ -8,6 +8,7 @@ Chart.register(...registerables);
   selector: 'app-registro',
   templateUrl: './registro.page.html',
   styleUrls: ['./registro.page.scss'],
+  standalone: true,
   imports: [ CommonModule, IonCardHeader, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel,IonCard, IonCardHeader, IonCardTitle, IonCardContent],
 })
 export class RegistroPage implements OnInit, AfterViewInit {
